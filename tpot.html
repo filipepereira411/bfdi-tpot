@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BFDI: The Power of Two (TPOT) Fan Hub</title>
+    <style>
+        :root {
+            --two-green: #3bc473;
+            --dark-bg: #121214;
+            --card-bg: #1e1e24;
+            --text-light: #ffffff;
+            --accent-lime: #a3ff7a;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--dark-bg);
+            color: var(--text-light);
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: rgba(18, 18, 20, 0.95);
+            padding: 20px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            border-bottom: 3px solid var(--two-green);
+            text-align: center;
+        }
+
+        header h1 {
+            color: var(--two-green);
+            font-size: 1.8rem;
+            letter-spacing: 1px;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #183e26 0%, var(--dark-bg) 100%);
+            padding: 60px 20px;
+            text-align: center;
+            border-bottom: 2px solid #222;
+        }
+
+        .hero h2 {
+            font-size: 2.5rem;
+            color: var(--accent-lime);
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto 20px auto;
+            color: #ccc;
+        }
+
+        .cta-btn {
+            display: inline-block;
+            background-color: var(--two-green);
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: transform 0.2s, background-color 0.2s;
+        }
+
+        .cta-btn:hover {
+            background-color: #2da15c;
+            transform: scale(1.05);
+        }
+
+        .stats-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 40px 20px;
+            flex-wrap: wrap;
+        }
+
+        .stat-box {
+            background-color: var(--card-bg);
+            padding: 20px;
+            border-radius: 10px;
+            min-width: 200px;
+            text-align: center;
+            border-top: 4px solid var(--two-green);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        }
+
+        .stat-box h3 {
+            font-size: 2.2rem;
+            color: var(--two-green);
+        }
+
+        .main-content {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            margin-bottom: 25px;
+            border-left: 5px solid var(--two-green);
+            padding-left: 10px;
+            color: var(--text-light);
+        }
+
+        .character-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .char-card {
+            background-color: var(--card-bg);
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s;
+            border: 1px solid #333;
+        }
+
+        .char-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--two-green);
+        }
+
+        .char-icon {
+            width: 80px;
+            height: 80px;
+            background-color: #333;
+            border-radius: 50%;
+            margin: 0 auto 15px auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+        }
+
+        .char-card h4 {
+            font-size: 1.3rem;
+            margin-bottom: 5px;
+            color: var(--accent-lime);
+        }
+
+        .char-card p {
+            font-size: 0.9rem;
+            color: #aaa;
+        }
+
+        footer {
+            background-color: #0b0b0d;
+            text-align: center;
+            padding: 25px;
+            margin-top: 40px;
+            font-size: 0.9rem;
+            color: #666;
+            border-top: 1px solid #222;
+        }
+
+        footer a {
+            color: var(--two-green);
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>JACKNJELLIFY • OSC HUB</h1>
+    </header>
+
+    <section class="hero">
+        <h2>The Power of Two</h2>
+        <p>A quinta temporada de Battle for Dream Island trouxe a batalha definitiva pelo poder supremo de Two!</p>
+        <a href="https://battlefordreamisland.fandom.com/wiki/Battle_for_Dream_Island:_The_Power_of_Two" target="_blank" class="cta-btn">Ver na Wiki Oficial</a>
+    </section>
+
+    <div class="stats-container">
+        <div class="stat-box">
+            <h3>25</h3>
+            <p>Episódios Totais</p>
+        </div>
+        <div class="stat-box">
+            <h3>42</h3>
+            <p>Competidores</p>
+        </div>
+        <div class="stat-box">
+            <h3>1</h3>
+            <p>Anfitrião (Two)</p>
+        </div>
+    </div>
+
+    <main class="main-content">
+        <h3 class="section-title">Alguns Competidores de Destaque</h3>
+        
+        <div class="character-grid">
+            <div class="char-card">
+                <div class="char-icon">🟢</div>
+                <h4>Two</h4>
+                <p>O Anfitrião Algebralien</p>
+            </div>
+            <div class="char-card">
+                <div class="char-icon">⚫</div>
+                <h4>Black Hole</h4>
+                <p>Equipa Death P.A.C.T. Again</p>
+            </div>
+            <div class="char-card">
+                <div class="char-icon">⭐</div>
+                <h4>Winner</h4>
+                <p>Equipa The S!</p>
+            </div>
+            <div class="char-card">
+                <div class="char-icon">🏷️</div>
+                <h4>Price Tag</h4>
+                <p>Novo Competidor do TPOT 1</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Projeto de Fã criado em HTML5/CSS3. BFDI & TPOT pertencem à marca <a href="https://youtube.com" target="_blank">jacknjellify</a>.</p>
+    </footer>
+
+</body>
+</html>
